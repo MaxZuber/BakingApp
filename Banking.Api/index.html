@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mosta pagina</title>
+    <link rel="icon" href="favicon.png">
+
+    <script src="/Scripts/libs/angular/angular.js" type="text/javascript"></script>
+    <script src="https://code.angularjs.org/1.4.5/angular-route.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.js" type="text/javascript"></script>
+    <script src="/Scripts/app.js" type="text/javascript"></script>
+    <script src="/Scripts/routes.js" type="text/javascript"></script>
+    <script src="Scripts/derectives.js" type="text/javascript"></script>
+    <script src="/Scripts/services.js" type="text/javascript"></script>
+    <script src="/Scripts/factories.js" type="text/javascript"></script>
+    <script src="/Scripts/controllers.js" type="text/javascript"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.signalR-2.2.0.js" type="text/javascript"></script>
+    <!-- autogeneraged script -->
+    <script src="/signalr/hubs"></script>
+    <link href="/Styles/libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="Styles/main.css" rel="stylesheet" />
+</head>
+<body ng-app="banking">
+    <div id="wrap">
+        <div ui-view class="container"></div>
+    </div>
+<div id="footer">
+    <div class="container">
+        <div class="col-lg-4 col-lg-offset-8 logo">
+            <p class="pull-right">
+                <span class="">BankingApp</span>
+            </p>
+        </div>
+        <div class="col-lg-12">
+            <ul class="pull-right helpfull-info">
+                <li>
+                    <a>Terms of Use</a>
+                </li>
+                <li>
+                    <a>Privacy & Cookies</a>
+                </li>
+                <li>
+                    ©2016 BankingApp
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <button id="sendmessage">send</button>
+
+     <!--<script>
+        $(function () {
+            // Reference the auto-generated proxy for the hub.  
+            var chat = $.connection.test;
+            // Create a function that the hub can call back to display messages.
+            chat.client.hello = function () {
+                debugger 
+                // Add the message to the page. 
+                $('#discussion').append('<li><strong>' + htmlEncode(name) 
+                    + '</strong>: ' + htmlEncode(message) + '</li>');
+            };
+            // Get the user name and store it to prepend to messages.
+            // Set initial focus to message input box.  
+            $('#message').focus();
+
+            // Start the connection.
+            $.connection.hub.start().done(function () {
+                $('#sendmessage').click(function () {
+                    debugger 
+                    // Call the Send method on the hub. 
+                    chat.server.hello();
+                    // Clear text box and reset focus for next comment. 
+                    $('#message').val('').focus();
+                });
+            });
+        });
+        // This optional function html-encodes messages for display in the page.
+        function htmlEncode(value) {
+            var encodedValue = $('<div />').text(value).html();
+            return encodedValue;
+        }
+    </script>-->
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+C:\Projects\BankingApp\Banking\Banking.Models\bin\Debug\Banking.Models.dll
+C:\Projects\BankingApp\Banking\Banking.Models\bin\Debug\Banking.Models.pdb
+C:\Projects\BankingApp\Banking\Banking.Models\obj\Debug\Banking.Models.dll
+C:\Projects\BankingApp\Banking\Banking.Models\obj\Debug\Banking.Models.pdb
+C:\Projects\office_work\BankingApp\Banking\Banking.Models\bin\Debug\Banking.Models.dll
+C:\Projects\office_work\BankingApp\Banking\Banking.Models\bin\Debug\Banking.Models.pdb
+C:\Projects\office_work\BankingApp\Banking\Banking.Models\obj\Debug\Banking.Models.dll
+C:\Projects\office_work\BankingApp\Banking\Banking.Models\obj\Debug\Banking.Models.pdb
+C:\Projects\office_work\BankingApp\Banking\Banking.Models\obj\Debug\Banking.Models.csprojResolveAssemblyReference.cache

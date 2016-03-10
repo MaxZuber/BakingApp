@@ -1,0 +1,164 @@
+﻿/*COMMON*/
+
+body {
+    font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
+    html,
+    body {
+      height: 100%;
+    }
+
+.logo {
+    font-weight: 700;
+    font-size: 110%;
+    color: #888;
+    margin-top: 15px;
+}
+#footer {
+  height: 100px;
+  background-color: #eee;
+}
+
+
+   #footer ul.helpfull-info {
+       list-style-type: none;
+   }
+
+      #footer ul.helpfull-info li {
+          display: inline-block;
+          font-size: 88%;
+          margin-left: 10px;
+    }
+
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -100px;
+  /* Pad bottom by footer height */
+  padding: 0 0 100px;
+}
+
+.positiveColor {
+    color: green;
+}
+.negativeColor {
+    color: red;
+}
+/*BUTTONS*/
+.ms-btn-primary {
+    background-color: #2672ec;
+    color: #fff;
+    height: 2.142em;
+    min-width: 6em;
+    font-family: "Segoe UI Semibold","Segoe UI Web Semibold","Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Medium","Helvetica Neue",Arial,sans-serif;
+    font-size: 100%;
+    padding: 3px 12px 5px;
+    border: 0;
+    border-radius: 0; 
+}
+    .ms-btn-primary:hover {
+        background-color: #5a94f1;
+
+    }
+
+    .ms-btn-primary:active {
+            background-color: #212121;
+    }
+
+   .ms-btn-primary:focus {
+        outline: 1px dotted #212121;
+   }
+
+   /*FORMS*/
+.ms-form-control {
+    border: 1px solid #bababa;
+    box-shadow: none !important;
+    border-radius: 0; 
+}
+    .ms-form-control:hover {
+        border-color: #8f8f8f;
+    }
+        .ms-form-control:focus {
+        border-color: #8f8f8f;
+    }
+
+.form-head {
+    color: #666;
+    font-weight: 200;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+    /*VALIDATION*/
+    .validation-errors {
+        margin-bottom: 12px;
+        line-height: 178%;
+    }
+        .validation-errors .error {
+            color: #c85305;
+            font-size: 86%;
+            white-space: normal;
+        }
+
+        .validation-errors .error-danger {
+            color: red;
+            white-space: normal;
+        }
+
+.form-control.hard-hightlight {
+    border-width: 2px;
+    background-color: rgba(255,255,255,0.4);
+    border-color: rgba(0,0,0,0.4);
+}
+    .form-control.hard-hightlight:focus {
+        border-color: #0078d7;
+        background-color: #fff;
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    .form-control.hard-hightlight.inputError {
+        border-color: red;
+    }
+
+/*LOGIN*/
+
+.login-label {
+    font-size: 88%;
+}
+
+.helpfull-links a {
+   font-size: 88%;
+}
+
+.ms-alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0px;
+}
+    .ms-alert.ms-alert-danger {
+      color: black;
+      background-color: rgb(255, 0, 0);
+    }
+    .ms-alert.ms-alert-success {
+      color: black;
+      background-color: rgb(75, 255, 0);
+        text-align: center;
+    }
+
+        .ms-alert.ms-alert-success a, 
+        .ms-alert.ms-alert-success a:hover {
+            font-weight: bold;
+            color: #2672ec;
+        }
+
+    

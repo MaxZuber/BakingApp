@@ -1,0 +1,41 @@
+﻿<div class="col-lg-4 col-lg-offset-8">
+    <h1 class="form-head">Sign In</h1>
+    <div style="height: 30px;"></div>
+    <form novalidate class="section" name="loginform" ng-submit="loginform.$valid && a.login()">
+         <!--Validation errors-->
+        <div class="validation-errors">
+            <span class="error" ng-show="vm.loginFailed">{{vm.loginFailedMessage}}</span>
+            <span class="error" ng-show="loginform.$submitted && loginform.username.$error.minlength">Username min length is 3</span>
+            <span class="error" ng-show="loginform.$submitted && loginform.username.$error.maxlength">Username max length is 16</span>
+            <span class="error" ng-show="loginform.$submitted && loginform.username.$error.required">Username is required</span>
+        </div>
+         <!--Validation errors end-->
+
+        <span class="login-label"> Banking account <a href="#/about">what's this?</a></span>
+        <div class="form-group">
+            <input class="form-control ms-form-control" name="username" type="text" placeholder="Username" ng-model="a.username" required ng-minlength="3" ng-maxlength="16"/>
+        </div>
+        <!--Validation errors-->
+        <div class="validation-errors">
+            <span class="error" ng-show="loginform.$submitted && loginform.password.$error.minlength">Password min length is 3</span>
+            <span class="error" ng-show="loginform.$submitted && loginform.password.$error.maxlength">Password max length is 32</span>
+            <span class="error" ng-show="loginform.$submitted && loginform.password.$error.required">Password is required</span>
+        </div>
+        <!--Validation errors end-->
+
+        <div class="form-group">
+            <input class="form-control ms-form-control" type="password" placeholder="Password" name="password" ng-model="a.password" required ng-minlength="3" ng-maxlength="32"/>
+        </div>
+        <div class="section">
+            <button type="submit" class="ms-btn-primary">Login</button>
+        </div>
+    </form>
+    <div class="section helpfull-links">
+        <a ui-sref="resetpassword">Can't access your account ?</a>
+    </div>
+    <div style="height: 80px;"></div>
+    <div>
+        <span>Don't have banking account ?</span>
+        <a ui-sref="signup">Sign up now</a>
+    </div>
+</div>

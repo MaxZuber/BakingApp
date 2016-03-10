@@ -1,0 +1,5 @@
+C:\Projects\BankingApp\Banking\Banking.Tests\bin\Debug\Banking.Tests.dll
+C:\Projects\BankingApp\Banking\Banking.Tests\bin\Debug\Banking.Tests.pdb
+C:\Projects\BankingApp\Banking\Banking.Tests\obj\Debug\Banking.Tests.csprojResolveAssemblyReference.cache
+C:\Projects\BankingApp\Banking\Banking.Tests\obj\Debug\Banking.Tests.dll
+C:\Projects\BankingApp\Banking\Banking.Tests\obj\Debug\Banking.Tests.pdb

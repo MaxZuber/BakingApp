@@ -1,0 +1,58 @@
+﻿<div class="col-lg-12 logo">
+    <img src="favicon.png" alt="BankingApp logo" width="20">
+    <span style="vertical-align: middle;">BankingApp</span>
+</div>
+<div class="col-lg-6">
+    <h1 class="form-head">Create an account</h1>
+    <div style="height: 30px;"></div>
+    <form name="signupform" novalidate ng-submit="signupform.$valid && !a.isUsernameBusy && a.signup()">
+        <div class="form-group">
+            <label>Username</label>
+            <input class="form-control ms-form-control hard-hightlight" ng-blur="a.isUsernameExist();" ng-class="{inputError:  a.isUsernameBusy || (signupform.$submitted  && (signupform.username.$error.required || signupform.username.$error.maxlength || signupform.username.$error.maxlength))}" name="username" type="text" ng-model="a.username" required ng-minlength="3" ng-maxlength="50" />
+            <div class="validation-errors">
+                <span class="error-danger" ng-show="a.isUsernameBusy">Usernmae already registered</span>
+                <span class="error-danger" ng-show="signupform.$submitted && signupform.username.$error.required">Username is required</span>
+                <span class="error-danger" ng-show="signupform.$submitted && signupform.username.$error.minlength">Usernmae min length is 3</span>
+                <span class="error-danger" ng-show="signupform.$submitted && signupform.username.$error.maxlength">Usernmae max length is 50</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input class="form-control ms-form-control hard-hightlight" ng-class="{inputError: signupform.$submitted && (signupform.password.$error.required || signupform.password.$error.maxlength || signupform.password.$error.maxlength)}" name="password" type="password" ng-model="a.password" required ng-minlength="3" ng-maxlength="50" />
+            <div class="validation-errors">
+                <span class="error-danger" ng-show="signupform.$submitted && signupform.password.$error.required">Password is required</span>
+                <span class="error-danger" ng-show="signupform.$submitted && signupform.password.$error.minlength">Password min length is 3</span>
+                <span class="error-danger" ng-show="signupform.$submitted && signupform.password.$error.maxlength">Password max length is 50</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input class="form-control ms-form-control hard-hightlight" ng-class="{inputError: signupform.$submitted && (signupform.confirmpassword.$error.required || signupform.confirmpassword.$error.maxlength || signupform.confirmpassword.$error.maxlength || signupform.confirmpassword.$error.nxEqualEx)}" name="confirmpassword" type="password" ng-model="a.confirmPassword" required ng-minlength="3" ng-maxlength="50" nx-equal-ex="a.password" />
+            <div class="validation-errors">
+                <span class="error-danger" ng-show="signupform.$submitted && signupform.confirmpassword.$error.required">Confirm Password is required</span>
+                <span class="error-danger" ng-show="signupform.$submitted && signupform.confirmpassword.$error.nxEqualEx">Passwords didn't match</span>
+                <span class="error-danger" ng-show="signupform.$submitted && signupform.confirmpassword.$error.minlength">Confirm Password min length is 3</span>
+                <span class="error-danger" ng-show="signupform.$submitted && signupform.confirmpassword.$error.maxlength">Confirm Password max length is 50</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="ms-btn-primary btn-block">Create Account</button>
+        </div>
+        <div class="form-group">
+
+            <div class="ms-alert ms-alert-success" role="alert" ng-show="a.signupSuccess">
+                <div>
+                    <strong>Account has been created</strong>
+                </div>
+                <div>
+                    <a href="#/login">Go to login page</a>
+                </div>
+
+            </div>
+            <div class="ms-alert ms-alert-danger" role="alert" ng-show="a.signupError">
+                    <strong>Error:</strong>
+                    <span>{{a.signupErrorMessage}} </span>
+            </div>
+        </div>
+    </form>
+</div>

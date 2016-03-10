@@ -1,0 +1,26 @@
+﻿<div class="col-lg-6">
+    <div class="page-header"> Current Balance</div>
+    <div class="pull-right">
+        {{ds.curentBalance}}
+    </div>
+
+</div>
+<div class="col-lg-6">
+    <div class="page-header">Latest transactions</div>
+    <div >
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Avount</th>
+                <th>Issuer</th>
+            </tr>
+            </thead>
+            <tbody >
+            <tr ng-repeat="n in ds.transactions" ng-class="{positiveColor: n.amount >= 0, negativeColor: n.amount < 0}" >
+                <td>{{n.amount}}</td>
+                <td>{{n.from}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
